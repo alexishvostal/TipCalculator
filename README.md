@@ -22,6 +22,7 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 
+- [x] Created color scheme for UI
 - [x] Settings page to select default tip value
 - [x] Slider to set custom tip value from 0-100%
 
