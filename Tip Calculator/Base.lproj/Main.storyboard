@@ -30,7 +30,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad" keyboardAppearance="alert"/>
                                 <connections>
-                                    <action selector="calculateTip2:" destination="BYZ-38-t0r" eventType="editingChanged" id="LEG-ds-HI5"/>
+                                    <action selector="billAmountChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="43m-la-rpt"/>
                                 </connections>
                             </textField>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="iLE-2z-MKR">
@@ -44,7 +44,7 @@
                                 </segments>
                                 <color key="selectedSegmentTintColor" red="0.12275932840000001" green="1" blue="0.75291205589999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <connections>
-                                    <action selector="calculateTip:" destination="BYZ-38-t0r" eventType="valueChanged" id="N77-vI-sT7"/>
+                                    <action selector="segmentedControlSelected:" destination="BYZ-38-t0r" eventType="valueChanged" id="7YM-dj-8i5"/>
                                 </connections>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tip:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Cz-mN-uXX">
@@ -73,7 +73,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.12275932840000001" green="1" blue="0.75291205589999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <connections>
-                                    <action selector="calculateTip3:" destination="BYZ-38-t0r" eventType="valueChanged" id="wMk-T9-H3i"/>
+                                    <action selector="tipRateSliderSelected:" destination="BYZ-38-t0r" eventType="valueChanged" id="Hll-8R-8pv"/>
                                 </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rate:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iqN-GF-hw9">
@@ -157,7 +157,7 @@
                                 </segments>
                                 <color key="selectedSegmentTintColor" red="0.12275932840000001" green="1" blue="0.75291205589999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <connections>
-                                    <action selector="valueChanged:" destination="eaY-mh-tuV" eventType="valueChanged" id="frJ-Dj-x49"/>
+                                    <action selector="segmentedValueChanged:" destination="eaY-mh-tuV" eventType="valueChanged" id="rDG-Ov-0jx"/>
                                 </connections>
                             </segmentedControl>
                         </subviews>

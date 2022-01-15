@@ -17,16 +17,15 @@ class SettingsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Do any additional setup after loading the view.
         let defaults = UserDefaults.standard
         let tipDefault = defaults.integer(forKey: "Tip")
         segmentedControl.selectedSegmentIndex = tipDefault
         
-        
-        // Do any additional setup after loading the view.
-        
     }
     
-    @IBAction func valueChanged(_ sender: Any) {
+    @IBAction func segmentedValueChanged(_ sender: Any) {
+        // Set default tip rate value
         let defaults = UserDefaults.standard
         defaults.set(segmentedControl.selectedSegmentIndex, forKey: "Tip")
     }
